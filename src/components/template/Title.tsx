@@ -5,7 +5,7 @@ interface TitleProps {
 
 export default function Title(props: TitleProps) {
   return (
-    <div>
+    <div className="w-3/4 ">
       <h1
         className={`
         font-black 

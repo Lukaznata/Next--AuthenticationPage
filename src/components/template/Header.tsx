@@ -13,9 +13,9 @@ export default function Header(props: HeaderProps) {
   const { theme, switchTheme } = useAppData();
 
   return (
-    <div className={`flex justify-between items-start gap-3`}>
+    <div className={`flex items-start`}>
       <Title title={props.title} subtitle={props.subtitle} />
-      <div className={`flex flex-grow justify-end items-center gap-2`}>
+      <div className={`flex flex-grow justify-end items-center gap-2 `}>
         <SwitchThemeButton theme={theme} switchTheme={switchTheme} />
         <UserAvatar
           className={`
