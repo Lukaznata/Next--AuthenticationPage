@@ -56,8 +56,8 @@ Clone o repositório:
 
  ```bash
 npm run dev
-Abra o navegador e acesse http://localhost:3000.
    ```
+Abra o navegador e acesse http://localhost:3000.
 
 ## Funcionalidades
 - **Autenticação com Email e Senha**: Registre-se e faça login utilizando credenciais de email.
