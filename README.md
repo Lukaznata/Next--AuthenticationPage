@@ -1,40 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next--AuthenticationPage - Sistema de Autenticação
 
-## Getting Started
+## Link Para Acessar
 
-First, run the development server:
+https://next-authentication-page.vercel.app/authentication
 
-```bash
+Este é um projeto de um sistema de autenticação completo, desenvolvido com Next.js e TypeScript, utilizando o Firebase como backend. O sistema permite login com email/senha ou autenticação via Google, e implementa uma interface responsiva com suporte a tema escuro e claro, persistindo preferências de usuário e sessão.
+
+## Sumário
+
+- [Descrição do Projeto](#descrição-do-projeto)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+- [Funcionalidades](#funcionalidades)
+- [Contribuição](#contribuição)
+
+
+## Descrição do Projeto
+
+Este projeto foi criado para fornecer um sistema de autenticação robusto e seguro, com suporte a autenticação via email/senha e Google. Utiliza Context API para gerenciamento de estado, e Firebase para gerenciamento de autenticação e backend. A interface é responsiva e adapta-se a diferentes tamanhos de tela, com suporte a tema claro e escuro.
+
+## Tecnologias Utilizadas
+- **Next.js**: Framework React para desenvolvimento de aplicações web.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **Firebase**: Plataforma utilizada para autenticação e backend.
+- **Context API**: Usada para gerenciamento global de estado.
+- **SCSS/Tailwind CSS**: Para estilização da interface, com suporte a temas.
+- **JavaScript Cookies**: Para gerenciar cookies e persistir sessões de usuário.
+- **LocalStorage**: Para salvar preferências de tema do usuário.
+- **Variáveis de Ambiente**: usadas para privar dados sensiveis para o lado do cliente, mantidas apenas no lado do servidor.
+
+## Instalação
+Para rodar o projeto localmente, siga os passos abaixo:
+
+Clone o repositório:
+
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/Lukaznata/Next--AuthenticationPage.git
+    ```
+
+2. Instale as dependências:
+    ```bash
+    npm install
+    ```
+
+3. Configure o Firebase:
+
+4. Crie um projeto no Firebase.
+
+5. Adicione a configuração do Firebase em um arquivo .env.local.
+
+6. Ative os provedores de autenticação necessários (email/senha, Google).
+
+7. Execute o servidor de desenvolvimento:
+
+ ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Abra o navegador e acesse http://localhost:3000.
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
+- **Autenticação com Email e Senha**: Registre-se e faça login utilizando credenciais de email.
+- **Autenticação via Google**: Use sua conta Google para acessar o sistema.
+- **Páginas Protegidas**: Acesse conteúdo protegido após autenticação.
+- **Gerenciamento de Sessão**: Sessão persistente após recarregamento da página.
+- **Tema Claro e Escuro**: Personalize a aparência do sistema conforme sua preferência.
+- **Responsividade**: Interface adaptável a diferentes dispositivos, incluindo mobile e desktop.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Contribuição
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests. Por favor, siga o código de conduta e as diretrizes de contribuição.
