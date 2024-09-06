@@ -3,6 +3,7 @@
 ## Link Para Acessar
 
 https://next-authent-git-430996-lucas-nathan-dos-santos-tonins-projects.vercel.app/authentication
+
 Este é um projeto de um sistema de autenticação completo, desenvolvido com Next.js e TypeScript, utilizando o Firebase como backend. O sistema permite login com email/senha ou autenticação via Google, e implementa uma interface responsiva com suporte a tema escuro e claro, persistindo preferências de usuário e sessão.
 
 ## Sumário
